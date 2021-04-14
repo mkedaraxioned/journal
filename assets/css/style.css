@@ -257,7 +257,8 @@ display: none;
 }
 
 .read-more-btn {
-  padding: 17px 25px;
+  /* padding: 17px 25px; */
+  padding: 17px 4.13%;
   margin: 0 auto;
   border: 2px solid #4291cb;
   display: block;
@@ -307,6 +308,7 @@ padding: 71px 0 71px;
 }
   
 .section2-item {
+  height: max-content;
   margin-bottom: 44px;
   border: 1px #808080 solid;
   border-radius: 20px;
@@ -314,6 +316,18 @@ padding: 71px 0 71px;
   list-style-type: none;
   flex-basis: 23.07%;
 }
+
+.section2-item:nth-of-type(6) {
+  transform: translateY(-119px);
+}
+
+.section2-item:nth-of-type(7) {
+transform: translateY(-24px);
+}
+.section2-item:nth-of-type(8) {
+  transform: translateY(-85px);
+}
+
  
 .section2-fig > img {
   border-top-right-radius: 20px;
@@ -330,7 +344,7 @@ padding: 71px 0 71px;
 }
 
 .post-item {
-padding: 0 13.81%;
+  padding: 14px 13.81%;
 }
 
 .post-item:nth-of-type(2) {
@@ -470,7 +484,7 @@ footer {
 }
 
 footer > div {
-  padding-top: 111px;
+  padding: 111px 0 58px ;
 }
 
 .footermiddle-item:nth-of-type(1) {
@@ -603,10 +617,111 @@ footer > div {
 }
 
 .footer-right > ul {
-  padding-top: 38px;
+  padding-top: 56px;
   border-top: 1px solid #c8c8c8;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+.footer-right-item {
+  margin-bottom: 28px;
+  flex-basis: 29.71%;
+
+}
+
+.footer-right-title {
+  padding-bottom: 19px;
+  margin-top: 6px;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom-para {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer-bottom-list {
+  flex-basis: 19.34%;
+}
+
+.footer-bottom-item > a {
+  color:#fff;
+}
+
+.footer-bottom-item:first-of-type {
+  padding-right: 7.85%;
+  border-right: 1px solid #fff;
+}
+
+.footer-bottom-item:last-of-type {
+  padding-left: 7.85%;
+}
+
+.contact-details a {
+  color: #c7c7c7;
+}
+
+address {
+  color: #c7c7c7;
+}
+
+.contact-details li::before {
+  font-family: "FontAwesome";
+  font-size: 23px;
+}
+
+address::before {
+    content: "\f124";  
+}
+
+.contact-details li:nth-of-type(2) > a {
+  content: "\f124";
+}
+
+.fa-angle-up {
+  color: #fff;
+  font-size: 54px;
+}
+
+.back-to-top {
+  display: inline-block;
+  padding: 8px 1.39%;
+  border: 1px solid #ffffff;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+    /* margin: 0 auto; */
+    /* width: max-content; */
+    /* text-align: center; */
+}
+
+.back-to-top:before {
+  content: "";
+  display: block;
+  width: 930px;
+  height: 2px;
+  background: white;
+  left: -930px;
+  top: 50%;
+  position: absolute;
+}
+
+.back-to-top:after {
+  content: "";
+  display: block;
+  width: 909px;
+  height: 2px;
+  background: white;
+  right: -909px;
+  top: 50%;
+  position: absolute;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
