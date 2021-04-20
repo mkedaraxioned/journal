@@ -900,6 +900,10 @@ transform: translateY(-23px);
   outline: 2px solid #f00;
 }
 
+.menu-bar {
+  display: none;
+}
+
  /*=================================
   footer styling ends here
 =================================*/ 
@@ -914,6 +918,7 @@ transform: translateY(-23px);
 
 .menu-bar {
     display: block;
+    padding-right: 20px;
 }
    
 .hide-menu-item {
